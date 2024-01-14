@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}Sampark{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">Sampark</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active navbar-nav">
+                    <a class="nav-link" href="/sign_in">Signin</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/sign_up">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Sampark!</h1>
+        <p class="lead">Your Personal Address Book for Quick Access to Contact Information.</p>
+        <hr class="my-4">
+        <p>Sampark is a feature-rich address book application designed to make managing your contacts a breeze. With a modern and intuitive interface, Sampark simplifies the way you organize and retrieve contact information.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Effortless Contact Management</h4>
+                <p>Store, organize, and update your contacts seamlessly. Add detailed information, including names, phone numbers, addresses, emails, and more.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Fast Search and Retrieval</h4>
+                <p>Find the information you need in an instant with our powerful search functionality. Filter contacts based on various criteria for quick access.</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Secure Data Storage</h4>
+                <p>Rest easy knowing that your contact data is securely stored. Sampark prioritizes the privacy and security of your personal information.</p>
+            </div>
+        </div>
+        <a class="btn btn-primary btn-lg mt-3" href="/sign_up" role="button">Get Started</a>
+    </div>
+</body>
+</html>
